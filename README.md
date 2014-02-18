@@ -4,8 +4,9 @@ better-scaffolding
 A better Grails template scaffolding based on Twitter Bootstrap v3.1.
 
 Simple Authentication Actions
-===========================
+=============================
 
+Put them at user controller.
 
 ```groovy
   def login() {
@@ -36,7 +37,9 @@ Simple Authentication Actions
 ```
 
 Function for Security Filter
-==========================
+==============================
+
+Create a new filter and put it there.
 
 ```groovy
   checaLogin(controller: '*', action: '*'){

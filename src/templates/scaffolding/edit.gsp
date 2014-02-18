@@ -26,7 +26,7 @@
         </g:eachError>
       </ul>
       </g:hasErrors>
-      <g:form class="form-horizontal" method="post" <%= multiPart ? ' enctype="multipart/form-data"' : '' %>>
+      <g:form class="form-horizontal" url="[resource:${propertyName}Instance, action:'update']" method="PUT" <%= multiPart ? ' enctype="multipart/form-data"' : '' %>>
         <fieldset>
           <g:hiddenField name="id" value="\${${propertyName}?.id}" />
           <g:hiddenField name="version" value="\${${propertyName}?.version}" />
