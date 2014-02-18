@@ -1,7 +1,7 @@
 better-scaffolding
 ==================
 
-A better Grails template scaffolding based on Twitter Bootstrap.
+A better Grails template scaffolding based on Twitter Bootstrap v3.1.
 
 Simple Authentication Actions
 ===========================
@@ -39,12 +39,12 @@ Function for Security Filter
 ==========================
 
 ```groovy
-    checaLogin(controller: '*', action: '*'){
-      before = {
-        if (!session.user && actionName != "login") {
-          redirect(controller: 'usuario', action: "login")
-          return false
-        }
+  checaLogin(controller: '*', action: '*'){
+    before = {
+      if (!session.user && actionName != "login") {
+        redirect(controller: 'usuario', action: "login")
+        return false
       }
     }
+  }
 ```
