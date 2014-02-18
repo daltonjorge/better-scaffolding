@@ -48,14 +48,14 @@
         </g:each>
       </tbody>
     </table>
+    <div class="pagination">
+      <g:paginate total="\${${propertyName}Count}" />
+    </div>
     <div class="form-actions">
       <g:link class="btn btn-success" action="create">
         <span class="glyphicon glyphicon-plus icon-white"></span>
         <g:message code="default.create.label" args="[entityName]" />
       </g:link>
-    </div>
-    <div class="pagination">
-      <g:paginate total="\${${propertyName}Count}" />
     </div>
   </body>
 </html>
