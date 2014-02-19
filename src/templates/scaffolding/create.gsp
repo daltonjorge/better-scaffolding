@@ -12,7 +12,7 @@
           <g:message code="${domainClass.propertyName}.plural.label" default="${domainClass.name}s" />
         </g:link>
       </li>
-      <li class="active"><g:message code="default.create.label" args="[${domainClass.name}]" /></li>
+      <li class="active"><g:message code="default.new.label" args="['${domainClass.name}']" /></li>
     </ol>
     <div id="create-${domainClass.propertyName}" class="scaffold-create" role="main">
       <g:if test="\${flash.message}">
